@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+    <!---
+    <context:annotation-config></context:annotation-config>
+
+    <beans>
+        <bean id="kenny" class="com.agr.performers.Instrumentalist">
+            <property name="song" value="Jingle Bells" />
+        </bean>
+        <bean id="saxophone" class="com.agr.instruments.Saxophone" />
+        <bean class="com.agr.instruments.Guitar" >
+            <qualifier value="stringed" />
+        </bean>
+    </beans>
+
+    <context:component-scan base-package="com.agr">
+        <context:include-filter type="assignable" expression="com.agr.instruments.Instrument"/>
+        <context:exclude-filter type="annotation" expression="com.agr.annotation.SkipIt"/>
+    </context:component-scan>-->
+
+    <context:component-scan base-package="com.agr" />
+</beans>
